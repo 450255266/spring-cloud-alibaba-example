@@ -149,11 +149,11 @@ public class HelloWorldController {
 
 进入服务管理菜单->服务列表就能够看到我们注册进去的服务。
 
-![](D:\WorkingSpace\spring-cloud-alibaba-example\cnblogs\images\nacos\20211028095355.png)
+![](https://gitee.com/SimpleWu/spring-cloud-alibaba-example/raw/master/cnblogs/images/nacos/20211028095355.png)
 
 点击详情即可查看服务元数据:
 
-![image-20211028095526214](D:\WorkingSpace\spring-cloud-alibaba-example\cnblogs\images\nacos\20211028095526214.png)
+![image-20211028095526214](https://gitee.com/SimpleWu/spring-cloud-alibaba-example/raw/master/cnblogs/images/nacos/20211028095526214.png)
 
 从Nacos之中服务列表能够看到我们所注册的服务意味这服务已经注册到Nacos Server端。
 
@@ -167,9 +167,9 @@ public class HelloWorldController {
 
 从Nacos菜单中命名空间点击新建命名空间，输入空间名称与描述，命名空间ID可填可不填，不填则会自动生成一串UUID的字符。
 
-![](D:\WorkingSpace\spring-cloud-alibaba-example\cnblogs\images\nacos\20211028100210.png)
+![](https://gitee.com/SimpleWu/spring-cloud-alibaba-example/raw/master/cnblogs/images/nacos/20211028100210.png)
 
-![](D:\WorkingSpace\spring-cloud-alibaba-example\cnblogs\images\nacos\20211028100357.png)
+![](https://gitee.com/SimpleWu/spring-cloud-alibaba-example/raw/master/cnblogs/images/nacos/20211028100357.png)
 
 ` 记录自动生成的命名空间ID:7e3699fa-09eb-4d47-8967-60f6c98da94a `
 
@@ -210,9 +210,9 @@ Nacos Server最终由namespace->group->ServiceID->Cluster-name获取到对应的
 
 配置好之后运行UserServiceApplication.java对服务进行重启，重启之后服务将重新注册到Nacos中并且在Web界面服务列表中Dev命名空间进行显示。
 
-![](D:\WorkingSpace\spring-cloud-alibaba-example\cnblogs\images\nacos\20211028101230.png)
+![](https://gitee.com/SimpleWu/spring-cloud-alibaba-example/raw/master/cnblogs/images/nacos/20211028101230.png)
 
-![](D:\WorkingSpace\spring-cloud-alibaba-example\cnblogs\images\nacos\20211028101252.png)
+![](https://gitee.com/SimpleWu/spring-cloud-alibaba-example/raw/master/cnblogs/images/nacos/20211028101252.png)
 
 ##### 注意事项
 
