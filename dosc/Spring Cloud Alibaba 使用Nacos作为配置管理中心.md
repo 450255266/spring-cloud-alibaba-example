@@ -57,9 +57,9 @@ spring:
 
 进入Nacos Web界面菜单配置管理->配置列表->进入dev命名空间 创建配置文件
 
-![](D:\WorkingSpace\spring-cloud-alibaba-example\cnblogs\images\nacos\20211028141458.png)
+![](https://gitee.com/SimpleWu/spring-cloud-alibaba-example/raw/master/cnblogs/images/nacos/20211028141458.png)
 
-![](D:\WorkingSpace\spring-cloud-alibaba-example\cnblogs\images\nacos\20211028141508.png)
+![](https://gitee.com/SimpleWu/spring-cloud-alibaba-example/raw/master/cnblogs/images/nacos/20211028141508.png)
 
 ##### 业务服务使用配置
 
