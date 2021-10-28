@@ -1,0 +1,30 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: service-member
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+        metadata:
+          version: 0.0.1
+          appname: ${spring.application.name}
+        #指定命名空间 对应dev环境
+        namespace: 7e3699fa-09eb-4d47-8967-60f6c98da94a
+        #指定分组 案例组
+        group: EXAMPLE-GROUP
+        #指定集群环境 华南
+        cluster-name: HuaNan
+      config:
+        server-addr: localhost:8848
+        #指定命名空间 对应dev环境
+        namespace: 7e3699fa-09eb-4d47-8967-60f6c98da94a
+        #指定分组 案例组
+        group: EXAMPLE-GROUP
+        #指定集群环境 华南
+        cluster-name: HuaNan
+        #指定配置文件的类型，默认是properties
+        file-extension: properties
+        #前缀${spring.application.name}
+        prefix: service-user
