@@ -261,6 +261,6 @@ public class RestTamplteConsumerController {
 以上代码通过负载均衡客户端获取到会员服务的一个实例并且使用实例的ip与端口拼接成一个请求路径，并且带上具体访问的请求地址对会员服务进行请求，请求到会员信息后将会员信息与用户信息合并返回到前端。
 
 #### 源码代码存放地址
-
 gitee: https://gitee.com/SimpleWu/spring-cloud-alibaba-example.git
 cnblogs: https://www.cnblogs.com/SimpleWu
+持续更新目录:https://www.cnblogs.com/SimpleWu/p/15476427.html

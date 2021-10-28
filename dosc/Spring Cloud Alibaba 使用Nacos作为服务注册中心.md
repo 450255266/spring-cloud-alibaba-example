@@ -221,4 +221,5 @@ Nacos Server最终由namespace->group->ServiceID->Cluster-name获取到对应的
 #### 源码代码存放地址
 gitee: https://gitee.com/SimpleWu/spring-cloud-alibaba-example.git
 cnblogs: https://www.cnblogs.com/SimpleWu
+持续更新目录:https://www.cnblogs.com/SimpleWu/p/15476427.html
 
