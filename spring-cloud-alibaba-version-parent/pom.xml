@@ -7,6 +7,7 @@
     <groupId>com.gitee</groupId>
     <artifactId>spring-cloud-alibaba-version-parent</artifactId>
     <version>0.0.1</version>
+    <packaging>pom</packaging>
 
     <properties>
         <!-- 编码与JDK版本 -->
@@ -19,12 +20,18 @@
         <spring.cloud.alibaba.version>2021.1</spring.cloud.alibaba.version>
         <!-- JSON 转换依赖 -->
         <fastjson.version>1.2.77</fastjson.version>
+        <esotericsoftware.kryo>2.24.0</esotericsoftware.kryo>
+        <com.esotericsoftware>4.0.2</com.esotericsoftware>
+        <de.javakaffee>0.44</de.javakaffee>
         <!-- 工具包 -->
         <hutool.version>5.7.3</hutool.version>
         <mapstruct.version>1.2.0.Final</mapstruct.version>
         <lombok.version>1.18.20</lombok.version>
         <!-- Swagger -->
         <springfox.boot.starter.version>3.0.0</springfox.boot.starter.version>
+        <!-- mybatis -->
+        <mybatis.plus.version>3.4.2</mybatis.plus.version>
+        <mybatis.plus.ds.version>2.5.4</mybatis.plus.ds.version>
     </properties>
 
     <!-- 开发人员 -->
@@ -62,8 +69,30 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+            <!-- 依赖 -->
+            <dependency>
+                <groupId>com.esotericsoftware.kryo</groupId>
+                <artifactId>kryo</artifactId>
+                <version>${esotericsoftware.kryo}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.esotericsoftware</groupId>
+                <artifactId>kryo</artifactId>
+                <version>${com.esotericsoftware}</version>
+            </dependency>
+            <dependency>
+                <groupId>de.javakaffee</groupId>
+                <artifactId>kryo-serializers</artifactId>
+                <version>${de.javakaffee}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>${mybatis.plus.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
+
 
     <!-- 构建方式 -->
     <build>

@@ -23,4 +23,27 @@ public class Response<T> {
     private String errorMsg;
     @ApiModelProperty(value = "返回结果")
     private T result;
+
+    public static <T> Response<T> createOk(String msg, T result) {
+        Response<T> response = new Response<>();
+        response.setCode("1");
+        response.setMsg(msg);
+        response.setResult(result);
+        return response;
+    }
+
+    public static <T> Response<T> createError(String errorMsg, T result) {
+        Response<T> response = new Response<>();
+        response.setErrorCode("1");
+        response.setErrorCode(errorMsg);
+        response.setResult(result);
+        return response;
+    }
+
+    public boolean isOk() {
+        if ("1".equals(this.code)) {
+            return true;
+        }
+        return false;
+    }
 }

@@ -12,6 +12,7 @@
     <groupId>com.gitee</groupId>
     <artifactId>spring-cloud-alibaba-common</artifactId>
     <version>0.0.1</version>
+    <packaging>jar</packaging>
 
     <dependencies>
         <!-- 工具依赖 -->

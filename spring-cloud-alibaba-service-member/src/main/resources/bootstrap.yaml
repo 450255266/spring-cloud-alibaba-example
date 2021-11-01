@@ -11,20 +11,47 @@ spring:
           version: 0.0.1
           appname: ${spring.application.name}
         #指定命名空间 对应dev环境
-        namespace: 7e3699fa-09eb-4d47-8967-60f6c98da94a
+        namespace: '7e3699fa-09eb-4d47-8967-60f6c98da94a'
         #指定分组 案例组
-        group: EXAMPLE-GROUP
+        group: 'EXAMPLE-GROUP'
         #指定集群环境 华南
-        cluster-name: HuaNan
+        cluster-name: 'HuaNan'
       config:
-        server-addr: localhost:8848
+        server-addr: ${spring.cloud.nacos.discovery.server-addr}
         #指定命名空间 对应dev环境
-        namespace: 7e3699fa-09eb-4d47-8967-60f6c98da94a
+        namespace: ${spring.cloud.nacos.discovery.namespace}
         #指定分组 案例组
-        group: EXAMPLE-GROUP
+        group: ${spring.cloud.nacos.discovery.group}
         #指定集群环境 华南
-        cluster-name: HuaNan
+        cluster-name: ${spring.cloud.nacos.discovery.cluster-name}
         #指定配置文件的类型，默认是properties
-        file-extension: properties
+        #file-extension: properties
         #前缀${spring.application.name}
-        prefix: service-user
+        prefix: ${spring.application.name}
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/member_db?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: 123456
+seata:
+  enabled: true
+  application-id: ${spring.application.name}
+  #对应nacos配置 service.vgroupMapping.my_test_tx_group
+  tx-service-group: 'my_test_tx_group'
+  service:
+    vgroup-mapping:
+      #对应nacos配置 service.vgroupMapping.my_test_tx_group 的值 default
+      my_test_tx_group: 'default'
+  registry:
+    type: nacos
+    nacos:
+      server-addr: ${spring.cloud.nacos.discovery.server-addr}
+      namespace: ${spring.cloud.nacos.discovery.namespace}
+      group: ${spring.cloud.nacos.discovery.group}
+      #cluster: ${spring.cloud.nacos.discovery.cluster}
+  config:
+    type: nacos
+    nacos:
+      server-addr: ${spring.cloud.nacos.discovery.server-addr}
+      namespace: ${spring.cloud.nacos.discovery.namespace}
+      group: ${spring.cloud.nacos.discovery.group}

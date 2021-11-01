@@ -21,4 +21,5 @@
 | 依赖                   | 版本          | 下载地址      |
 | ---------------------- | ------------- | ---------------------- |
 | Nacos Server            | 2.0.2 | [二进制下载](https://github.com/alibaba/nacos/releases/download/2.0.2/nacos-server-2.0.2.zip) [源码下载](https://github.com/alibaba/nacos/archive/refs/tags/2.0.2.zip) |
-| Sentinel Service | 1.8.0 | [二进制下载](https://github.com/alibaba/Sentinel/releases/download/1.8.2/sentinel-dashboard-1.8.2.jar) [源码下载](https://github.com/alibaba/Sentinel/archive/refs/tags/1.8.2.zip) |
+| Sentinel Server | 1.8.0 | [二进制下载](https://github.com/alibaba/Sentinel/releases/download/1.8.2/sentinel-dashboard-1.8.2.jar) [源码下载](https://github.com/alibaba/Sentinel/archive/refs/tags/1.8.2.zip) |
+| Seata Server | 1.3.0 | [二进制下载](https://github.com/seata/seata/releases/download/v1.3.0/seata-server-1.3.0.zip) [源码下载](https://github.com/seata/seata/archive/refs/tags/v1.3.0.zip) |
