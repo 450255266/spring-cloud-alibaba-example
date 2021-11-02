@@ -1,8 +1,12 @@
+### 目录首页
+[目录以及父工程指引](https://gitee.com/SimpleWu/spring-cloud-alibaba-example/blob/master/dosc/Spring%20Cloud%20Alibaba%20%E4%BB%8B%E7%BB%8D%E5%8F%8A%E5%B7%A5%E7%A8%8B%E5%87%86%E5%A4%87.md)
 ### 工程介绍
 - spring-cloud-alibaba-version-parent 统一依赖管理工程
 - spring-cloud-alibaba-common 公共服务依赖
 - spring-cloud-alibaba-service-user 用户中心业务服务
 - spring-cloud-alibaba-service-member 会员中心业务服务
+- config 案例中使用的配置文件
+- sql 案例中使用到的sql脚本
 
 ### 核心依赖
 

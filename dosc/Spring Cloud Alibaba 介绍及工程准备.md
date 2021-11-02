@@ -316,8 +316,8 @@ public class ServiceException extends RuntimeException {
 | SkyWalking 介绍安装部署篇                             | 未更新                                                   |
 | Spring Cloud Alibaba 介绍及工程准备                   | [前往](https://www.cnblogs.com/SimpleWu/p/15476427.html) |
 | Spring Cloud Alibaba 使用Nacos作为服务注册中心        | [前往](https://www.cnblogs.com/SimpleWu/p/15476459.html) |
-| Spring Cloud Alibaba 使用Nacos作为配置管理中心        | 前往                                                     |
-| Spring Cloud Alibaba 使用RestTemplate进行服务消费     | 前往                                                     |
+| Spring Cloud Alibaba 使用Nacos作为配置管理中心        | [前往](https://www.cnblogs.com/SimpleWu/p/15492515.html)                                                     |
+| Spring Cloud Alibaba 使用RestTemplate进行服务消费     | [前往](https://www.cnblogs.com/SimpleWu/p/15499975.html)                                                     |
 | Spring Cloud Alibaba 使用Feign进行服务消费            | 前往                                                     |
 | Spring Cloud Alibaba 使用Seata解决分布式事务          | 前往                                                     |
 | Spring Cloud Alibaba 使用Gateway作为服务网关          | 前往                                                     |

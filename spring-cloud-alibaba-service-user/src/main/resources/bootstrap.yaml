@@ -55,3 +55,9 @@ seata:
       server-addr: ${spring.cloud.nacos.discovery.server-addr}
       namespace: ${spring.cloud.nacos.discovery.namespace}
       group: ${spring.cloud.nacos.discovery.group}
+feign:
+  client:
+    config:
+      default:
+        connectTimeout: 2000
+        readTimeout: 3000
