@@ -10,6 +10,7 @@ import com.gtiee.example.common.exception.Response;
 import io.seata.spring.annotation.GlobalTransactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.ObjectUtils;
 
 import java.util.Date;
@@ -21,6 +22,7 @@ public class IUserBizImpl extends ServiceImpl<UserMapper, User> implements IUser
     private MemberInfoControllerClient client;
 
     @GlobalTransactional(name = "login_add_member_intergral",rollbackFor = Exception.class)//开启分布式事务
+    //@Transactional
     @Override
     public boolean login(UserLoginCommand command) {
         LambdaQueryWrapper<User> wrapper = new LambdaQueryWrapper<>();
@@ -36,8 +38,6 @@ public class IUserBizImpl extends ServiceImpl<UserMapper, User> implements IUser
             //调用积分接口成功，修改当前用户登录时间
             loginUser.setLastLoginDate(new Date());
             updateById(loginUser);
-
-
             //假设此处发生异常，不但修改当前用户登录时间需要回滚并且新增的会员积分信息也回滚才算正常
             int i = 0 / 0;
             return true;

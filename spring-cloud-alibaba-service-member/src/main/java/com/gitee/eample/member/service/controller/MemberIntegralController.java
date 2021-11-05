@@ -20,7 +20,6 @@ import java.util.Date;
 @RestController
 @RequestMapping("/member/integral")
 public class MemberIntegralController {
-
     @Autowired
     private IMemberIntegralBiz memberIntegralBiz;
 
@@ -35,5 +34,4 @@ public class MemberIntegralController {
         memberIntegralBiz.save(memberIntegral);
         return Response.createOk("登录新增会员积分成功!", true);
     }
-
 }
