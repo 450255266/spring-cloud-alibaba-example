@@ -199,7 +199,7 @@ transport.compressor=none
 ```
 其中该配置需要重点关注`service.vgroupMapping.my_test_tx_group=default`这里的配置与微服务应用中的配置必须要一致后面会描述到。
 
-由于有时间类型是Seata回滚反序列化Date类型无法成功反序列化，所有次数修改序列化方式解决该问题: `client.undo.logSerialization=kryo`
+由于有时间类型是Seata回滚反序列化Date类型无法成功反序列化，需要修改序列化方式解决该问题: `client.undo.logSerialization=kryo`
 
 修改完所有配置运行从官网下载的nacos-config.sh文件将文本内容上次到nacos配置中心中:
 

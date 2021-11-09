@@ -325,6 +325,7 @@ public class ServiceException extends RuntimeException {
 | Spring Cloud Alibaba 使用SkyWalking进行分布式链路跟踪 | 前往                                                     |
 | Spring Cloud Alibaba 使用RocketMQ进行消息生产         | 前往                                                     |
 | Spring Cloud Alibaba 使用RocketMQ进行消息消费         | 前往                                                     |
+| Spring Cloud Alibaba 使用RocketMQ延迟队列实现限时订单   | 前往                                                     |
 | 持续更新中....                                        | 持续更新                                                 |
 
 ##### 源码代码存放地址
