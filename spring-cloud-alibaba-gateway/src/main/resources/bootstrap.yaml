@@ -1,0 +1,43 @@
+server:
+  port: 80
+
+# 配置输出日志
+logging:
+  level:
+    #    org.springframework.cloud.gateway: TRACE
+    #    org.springframework.http.server.reactive: DEBUG
+    #    org.springframework.web.reactive: DEBUG
+    #    reactor.ipc.netty: DEBUG
+    com.gitee.tech.gray.gateway: DEBUG
+
+#开启端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+spring:
+  application:
+    name: gateway-reactor-gray
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+      routes:
+        - id: service-member
+          uri: lb://service-member
+          predicates:
+            - Path=/member/**
+          filters:
+            - StripPrefix=1
+        - id: service-user
+            uri: lb://service-user
+            predicates:
+              - Path=/user/**
+            filters:
+              - StripPrefix=1
